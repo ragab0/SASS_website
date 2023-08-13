@@ -1,0 +1,54 @@
+@use "../variables/colors" as *;
+@use "../utils/utils" as *;
+
+.hero {
+    @include centered(66px);
+    flex-direction: column-reverse;
+    margin-bottom: 66px;
+    @include media(md) {
+        flex-direction: row;
+        gap: 1em;
+    }
+    & > * {
+        width: 100%;
+        @include media(md) {
+            width: 50% !important;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+    .content {
+        width: fit-content;
+        text-align: center;
+        @include media(sm) {
+            flex-direction: row;
+            text-align:start;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            @include media(sm) {
+                font-size: 3.5rem;
+            }
+            @include media(md) {
+                font-size: 4rem;
+            }
+            span {
+                display: block;
+                @include media(sm) {
+                    display: inline-block;
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            @include media(sm) {
+                width: fit-content;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+footer {
+    text-align: center;
+    border-top: 3px solid #eee;
+    cursor:grabbing;
+
+    .container > * {
+        width: fit-content;
+        display: inline-block;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+}

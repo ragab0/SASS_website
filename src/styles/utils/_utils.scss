@@ -1,0 +1,23 @@
+@mixin centered($gap) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if ($gap) {
+        gap: $gap;
+    } @else {
+        gap: 1em;
+    }
+}
+
+
+/*! Media follow the principle of mobile-first .. */
+@mixin media($media_name) {
+    $medias: (sm: 550px, md: 768px);
+    @each $type, $size in $medias {
+        @if $media_name == $type {
+            @media (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}

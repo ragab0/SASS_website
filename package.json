@@ -1,0 +1,21 @@
+{
+  "name": "sass_website",
+  "version": "1.0.0",
+  "description": "First full website in practicing SASS_language",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.65.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ragab",
+  "license": "ISC"
+}
